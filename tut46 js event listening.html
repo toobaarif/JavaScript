@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event listening in javaScript</title>
+    <style>
+        #btn{
+            /* width: 20px; */
+            padding: 10px;
+            border: 2px solid red;
+            color: white;
+            background-color: black;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- //   browser events: event mean listen something (ki kch huwa hai)
+   { 
+    //  click 
+    //  contextmenu (when click on mouse right side)
+    //  mouseover (element s bahr le jana mouse ko) /mouseout (mouse elemnt k bahar nikla)
+    //  mousedown (press mouse button) /mouseup  
+    //  mousemove 
+
+    //  submit 
+    //  focus 
+
+    //  DOMContentLoaded (when html is loaded)
+
+    //  trasitioned
+    //} -->
+
+   
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque perspiciatis aliquid nemo alias, recusandae, culpa soluta exercitationem aut quas vel, distinctio doloribus quo delectus aperiam accusamus ducimus nam! Tempora odit molestias totam nostrum veniam in harum. Quam fugiat et voluptate ab reiciendis enim eos, unde nemo modi sint dolorum a provident nihil eaque, quia voluptatum sapiente ullam adipisci officiis facere quisquam dolore harum inventore! Possimus asperiores quibusdam facilis tempora eius modi illo neque beatae sed et deleniti ad tenetur quis, fuga veniam atque necessitatibus cumque praesentium provident corporis maxime cum, placeat minima iure. Voluptates beatae assumenda commodi tempore sapiente voluptatibus atque dolore, ea obcaecati earum veritatis delectus odit suscipit inventore ducimus reiciendis! Eaque alias eveniet accusamus eos molestias ipsam sit consequuntur delectus amet aspernatur est dolorem aut sequi quisquam non obcaecati error doloremque aliquam, modi ad itaque quia, quos voluptate? Expedita doloribus labore laudantium delectus illo, necessitatibus pariatur qui nostrum fugiat earum aut officia, id aliquam voluptatum! Laboriosam molestias, earum inventore doloribus architecto corporis. Fugit at sunt minima repellat veniam deserunt! Possimus, veritatis! Alias error at doloribus! Laborum quod, dolores deserunt quasi assumenda tempore nobis cupiditate quaerat, ullam aspernatur eum dignissimos libero, asperiores odit similique modi ipsa rem iusto esse doloribus corrupti. Fugit dolorem enim eveniet amet, in ipsum ipsam atque? Ipsam suscipit exercitationem quas accusamus laudantium natus, tempore fugiat incidunt nemo perferendis, obcaecati eaque. Veritatis, dolorum. Laudantium cum nisi impedit nesciunt earum.</p>
+        <button id="btn" onclick="toggleHide()">    
+            Show/Hide
+        </button>
+        <!-- jab buttto p onclick kry to isky equal wala toggleHide enable ho  -->
+        <!-- onclick(event) for: click on button -->
+        <!-- toggleHide(its function) for: content show and hide -->
+    </div>
+    
+
+    <script>
+               // add css (element.style.property= 'value')
+    // function toggleHide ==> for show and hide 
+    // function toggleHide(){
+    //    let btn =document.getElementById('btn');
+    //    let para = document.getElementById('para');
+
+    // para.style.display = 'none';
+    
+    //    if(para.style.display != 'none'){ // bcz paragraph is block element (show in block)
+    //    para.style.display ='none';
+    //    }
+    //    else{
+    //        para.style.display = 'block';
+    //    }
+    // }
+
+    // element.addEventListener(add event here, function run(){
+    //     statement perform here 
+    // })
+    //   let para = document.getElementById('para');
+    //  para.addEventListener('mouseover',function run(){
+    //       alert("mouse inside");
+    // });
+    // para.addEventListener('mouseout', function run(){
+    //     alert("mouse outside");
+    // });
+
+
+
+    </script>
+</body>
+</html>

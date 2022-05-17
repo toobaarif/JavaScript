@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">1
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions in javaScript</title>
+</head>
+<body>
+
+    <div class="container">
+        This is sArrow function file.
+    </div>
+
+    <script>
+        // 1. function greet(){
+        //     console.log("Good Morning");
+        // }
+        // greet();
+
+        // 2. Through arrow function => short hand
+        // greet = ()=> {
+        //     console.log("Good Morning with arrow function")
+        // }
+        // greet();
+
+        // 3. More short hand function  
+        let greet = () => console.log("It is more short hand function! ");
+
+
+
+        //  Arrow function on setTimeOut
+        // setTimeout(() => {
+        //    console.log("We are inside setTimeOut");
+        // }, 3000);
+
+
+        // let sum = (a,b) =>{
+        //     return a + b;
+        // };
+        // console.log("Sum: "+ sum(5,8));
+
+
+        // //  or short
+        // let sum2 = (a,b) => a+b;
+        // console.log("Use more short cut: "+sum2(10,20));
+
+//  this arrow function k through run hoga agr arrow function ka istimal na kry to this undefine hoga ye arrow func ka object hai . parents ka this hai ye like obj1 ka otherwise ye this uska aona hoga
+        let obj1 = {
+            greetings : "Good Morning",
+            name : ["Tooba", "Laiba", "Marwa", "Sara"],
+            speak(){
+               this.name.forEach((student) =>{
+                   console.log(this.greetings+ " Kukdoo koo " +student);
+               })
+            }
+        }
+        obj1.speak();
+
+    </script>
+    
+</body>
+</html>

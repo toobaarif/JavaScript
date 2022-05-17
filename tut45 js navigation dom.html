@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation the DOM in javaScript</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+
+<div class="container">
+    another container
+</div>
+<div class="mains"></div>
+
+
+
+
+    <script>
+       console.log("Manupulating DOM");  // DOM --> document object model 
+    //    get element from html in js through id, class and selectors
+           // 1: get element by id
+    //    let a = document.getElementById('main')
+    //    console.log(a);
+    //    let nav = document.getElementById("nav");
+    //    console.log(nav);
+
+    // // 2: get eleemnt by class
+    //    let containers = document.getElementsByClassName('container');
+    //    console.log(containers);
+
+    // // 3: get element by selector
+    // let select = document.querySelector('#nav');
+    // console.log("selector return: ",select);
+
+
+    // Add element in inner html through javaScript (like we conditioon to js when we click button so show these elements)
+//   let addElement = document.getElementById('main').innerHTML ="<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, quaerat! Eligendi, explicabo odio vitae autem illum temporibus saepe minus quaerat adipisci voluptatum! Natus a saepe rem inventore quae consequuntur eos. </p>"
+//   console.log(addElement);
+
+  console.log(document.getElementById("main"))
+  let cont = document.getElementsByClassName("container");
+  console.log(cont);
+
+  let add =document.getElementsByClassName('mains').innerHTML = "<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, quaerat! Eligendi, explicabo odio vitae autem illum temporibus saepe minus quaerat adipisci voluptatum! Natus a saepe rem inventore quae consequuntur eos. </p>";
+  document.write(add);
+  console.log(add);
+    </script>
+</body>
+</html>

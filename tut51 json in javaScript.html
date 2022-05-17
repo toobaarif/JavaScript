@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json in javaScript</title>
+</head>
+<body>
+   <div class="container">
+       This is my container
+   </div>
+
+    <script>
+    let jsonObj = {
+        name : "Tooba",
+        channel : "CodeWithtooba",
+        friend : "myFriend" ,
+        food : "Biryani"
+    }
+     console.log(jsonObj);
+
+    //   JSON for convert object into string 
+    //   stringify is a function 
+    //  stringify ==> object into String   (after stringify we can use all String functions)
+    //  parse ==> String into object
+
+        let myJsonStr = JSON.stringify(jsonObj);
+        console.log(myJsonStr);
+
+        
+        // Again this string convrt into object
+      myJsonStr =  myJsonStr.replace('Biryani' , "pulao");
+        console.log(myJsonStr);
+
+    let newjson = JSON.parse(myJsonStr);
+    console.log(newjson);
+
+    </script>   
+    
+</body>
+</html>

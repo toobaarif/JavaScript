@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time in javaScript</title>
+    <style>
+        .container{
+            font-size: 25px;
+            background-color: blanchedalmond;
+            border: 2px solid gray;
+            margin: 5px;
+            padding: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        This is a container
+        Current Time is: <span id="time">
+        </span>
+    </div>
+
+
+    <script>
+ console.log("Date and Time in javaScript");
+
+//  let dt = new Date();  // date  object
+//  console.log(dt);
+
+//  let dt1 = new Date(1000);  // date  object with contructor value
+//  console.log(dt1);
+
+//  let newDate = new Date("2029-09-30");
+//  console.log(newDate);
+
+
+// let name = new Date (year, month, date, hours, minutes, seconds, milliseconds);
+ let newDate1 = new Date(3020, 4, 6, 9, 3, 2, 34);
+ console.log(newDate1);
+
+//  some function of date and time
+let yr = newDate1.getFullYear();
+console.log("This is yesr: "+yr);
+
+let month = newDate1.getMonth();
+console.log("Month: "+month+1);  // bcz javaScript start month from 0
+
+let date = newDate1.getDate();
+console.log("Date: "+date);
+
+let day = newDate1.getHours();
+console.log("Day: "+day);
+
+let minutes = newDate1.getMinutes();
+console.log("minutes: "+minutes);
+
+        newDate1.setDate(7);
+        newDate1.setMinutes(39);
+        console.log(newDate1);
+
+        function updateTime(){
+            // time = new Date();
+            // document.getElementById('time').innerHTML = time;
+             document.getElementById('time').innerHTML = new Date();
+        }
+        setInterval(updateTime, 1000);
+
+    </script>
+</body>
+</html>

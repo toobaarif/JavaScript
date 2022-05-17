@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeOut and clearTimeOut in javaScript</title>
+</head>
+<body>
+    <div class="container">
+        Time now is: <span id="time"></span>
+    </div>
+
+
+
+
+    <script>
+        console.log("This is setTimeOut and clearTimeOut tutorial");
+
+        // setTimeout --> allows us to run the function once after the interval of time 
+        // setInterval --> allows us to run the function repeatadly after the interval of time 
+        function greet(name, byteText){
+            console.log("Hello good morning "+ name +" "+ byteText)
+        }
+        // greet("Tooba", "Take Care");
+    // 1:   setTimeout(greet,5000, "Tooba","Take Care");     
+        // setTimeout(greet(), 5000); --> wrong as it is calling a functin with paranthesis inside setTimeout   
+        // if 
+    // 2:   timeOut = setTimeout(greet, 5000, "Tooba", "Take Care");
+    //    console.log(timeOut);  // give unique id and run 5sec
+
+    //    clearTimeout(timeOut); // setTimeOut func will be clear it dosnt run now
+
+
+        // setInterval --> itne time k bad run hota jayega
+        // setInterval(greet, 1000, "Tooba", "Take Care");
+        // interval = setInterval(greet,1000,"Tooba", "take care")
+        // console.log(interval);
+        // clearInterval(interval);
+
+
+
+
+
+        
+// display time from javaScript
+
+//         function displayTime(){
+//             time = new Date();
+//             console.log(time);
+//             document.getElementById('time').innerHTML = time;
+//         }
+//    setInterval(displayTime,1000);
+
+
+    </script>
+</body>
+</html>
+
